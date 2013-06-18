@@ -1,0 +1,37 @@
+MENU OPTIONS:
+
+Free Version (Has ads, no sharing of friends playlists)
+Pro Version (No ads, Can share friends playlists)
+
+-----Home-----
+Top: Shows Concerts/Music Near You.
+Refresh Button (Accounts and Playlists)
+Downward: Add Accounts, My Playlists, Friend's Playlists
+Menu Key: Open Settings, Pro-Version Link, About-Me
+
+-----Add Accounts----
+Shows Active Accounts
+Shows Add Account Button
+      ---List Opens: Pandora, Google Music/Youtube,       Soundcloud, Spotify, ..Internet Radio..,etc
+
+-----My Playlists----
+Create Playlist from: --List accounts, songs
+Recent Like's
+List of Playlists
+
+-----Friends Playlists----
+Add Friends button: ---By facebook or                    youtube/google/spotify name etc.
+List current Friends
+     Sublist their playlists in chronical order.
+
+----Settings Menu----
+Refresh Interval on accounts (Slow for free version)
+Donate / Suggestions Buttons
+Save Location on Playlists
+
+
+
+
+
+
+
