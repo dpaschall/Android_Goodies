@@ -2,10 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Success</title>
 </head>
 
-<body>
+<body style="background-image:url(umb.jpg); background-position:top; background-size:auto;">
+
+<h1 style="color:#FF0000; text-align:center;font-family:'Arial Black', Gadget, sans-serif;font-size:80px">SUCCESS</h1>
+<br><br><br><br><br>
+
 
 <?php
 
@@ -16,9 +20,18 @@ $db_pass = $_POST["pass"];
 $db_name = $_POST["name"];
 	
 
-//user input changed values
-$iName=$_POST['iName'];
-//$iValue=$_POST['iValue'];
+//user input changed values, if !=null;
+if (isset($_POST['iName']))    
+{    
+        
+$name=$_POST['iName'];
+}    
+
+if (isset($_POST['iValue']))    
+{    
+        
+$value=$_POST['iValue'];
+}    
 
 
 
@@ -27,13 +40,16 @@ mysql_select_db("$db_name") or die ("No database called " . "$db_name");
 
 
 //save the MYSQL commands in a string
-$sql="SELECT '$iName' FROM phone_number";
+$sql=mysql_query("SELECT * FROM phone_number WHERE name='$name'");
 
 
-while($row = mysql_query($connection, $sql))
+while($row = mysql_fetch_array($sql))
 {
 	
-echo $row;
+	
+echo '<font color="blue"><strong>NAME:</strong></font> ' . '<font color="blue"><strong>' . $row['name'] . '</strong></font>' . '<br><font color="blue"><strong> MOBILE:</strong></font>' .  $row['mobile'] ;
+
+echo "<br>";
 }
 
 mysql_close($connection);
