@@ -9,19 +9,13 @@
 <?php
 
 //Database values
-
 $db_host = $_POST["host"];
 $db_username = $_POST["username"];
 $db_pass = $_POST["pass"];
 $db_name = $_POST["name"];
 	
 
-	
-
 //user input changed values
-
-
-
 $connection=mysql_connect("$db_host","$db_username","$db_pass") or die ("Could not connect to MySQL");
 @mysql_select_db("$db_name") or die ("No database called " . "$db_name");
 

@@ -5,7 +5,7 @@
 <title>Untitled Document</title>
 </head>
 
-<body>
+<body style="background-image:url(warcraft_Desktop.jpg);background-size:cover;">
 
 <?php
 
@@ -15,14 +15,18 @@ $db_pass = $_POST["pass"];
 $db_name = $_POST["DB_NAME"];
 	
 
-	
+//test connections
+$connection=mysql_connect("$db_host","$db_username","$db_pass") or die ("Could not connect to MySQL");
+mysql_select_db("$db_name") or die ("No database called " . "$db_name");
+
+
 ?>
 
 
-<p style="color:blue; font-size:36px">Insert Value</p>
+<p style="color:red; font-size:36px; font-family:Verdana, Geneva, sans-serif;"><strong>Insert Value</strong></p>
 <form action="insertValue.php" method="post"> <br />
-Data_Name: <input type="text" name="iName" ><br />
-Data_Value: <input type="text" name="iValue" ><br />
+<p style="color:red;">Data_Name:<input type="text" name="iName" ></p>
+<p style="color:red;">Data_Value: <input type="text" name="iValue" ></p><br />
 <input type="hidden" name="host" value="<?php echo $db_host ?>"  >
 <input type="hidden" name="username" value="<?php echo $db_username ?>" >
 <input type="hidden" name="pass" value="<?php echo $db_pass ?>"  >
@@ -31,14 +35,16 @@ Data_Value: <input type="text" name="iValue" ><br />
 </form>
 
 
-<p style="color:blue; font-size:36px">Retrieve Value</p>
-<form action="connect.php" method="get"> <br />
-Data_Name: <input type="text" name="iName"  > <br />
-Data_Value: <input type="text" name"iValue" > <br />
+<p style="color:red; font-size:36px; font-family:Verdana, Geneva, sans-serif;"><strong>Retrieve Value</strong></p>
+<form action="retrieveValue.php" method="post"> <br />
+<p style="color:red;">Data_Name: <input type="text" name="iName"  ></p> 
+<p style="color:red;">Data_Value: <input type="text" name"iValue" ></p> <br />
 <input type="hidden" name="host" value="<?php echo $db_host ?>"  >
 <input type="hidden" name="username" value="<?php echo $db_username ?>" >
 <input type="hidden" name="pass" value="<?php echo $db_pass ?>"  >
 <input type="hidden" name="name" value="<?php echo $db_name ?>"  >
+
+<p style="color:red;"> (Only one value is required...")</p>
 <input type="submit" ><br />
 </form>
 
