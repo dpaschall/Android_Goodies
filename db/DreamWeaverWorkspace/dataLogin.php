@@ -38,7 +38,7 @@ mysql_select_db("$db_name") or die ("No database called " . "$db_name");
 <p style="color:red; font-size:36px; font-family:Verdana, Geneva, sans-serif;"><strong>Retrieve Value</strong></p>
 <form action="retrieveValue.php" method="post"> <br />
 <p style="color:red;">Data_Name: <input type="text" name="iName"  ></p> 
-<p style="color:red;">Data_Value: <input type="text" name"iValue" ></p> <br />
+ <br />
 <input type="hidden" name="host" value="<?php echo $db_host ?>"  >
 <input type="hidden" name="username" value="<?php echo $db_username ?>" >
 <input type="hidden" name="pass" value="<?php echo $db_pass ?>"  >
