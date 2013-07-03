@@ -6,8 +6,7 @@
 <title>ServerTest</title>
 </head>
 
-<body style="background-image:url(r4e2C.jpg); background-size:cover;">
-<p style="background-image:url(pentagram-star-black-white.jpg);background-size:contain;font-size:40px;"> .</p>
+<body style="background-image:url(mario.jpg); background-size:cover;">
 <p  style="color:red;font-size:36px;text-align:center;"><strong>Enter Login Data</strong></p>
 
 <form action="dataLogin.php" method="post"> <br />
