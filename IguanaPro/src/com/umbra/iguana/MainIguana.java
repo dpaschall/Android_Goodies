@@ -18,5 +18,5 @@ public class MainIguana extends Activity {
 		getMenuInflater().inflate(R.menu.main_iguana, menu);
 		return true;
 	}
-
+// add a splash screen
 }
