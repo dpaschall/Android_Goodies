@@ -1,13 +1,20 @@
 package com.iguana.iguanapro;
 
-public class MainActivity {
+import android.app.Activity;
+import android.os.Bundle;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class MainActivity extends Activity {
 
+	
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 	}
+	
+	 @Override
+   public void onSaveInstanceState(Bundle savedInstanceState) {
+       super.onSaveInstanceState(savedInstanceState);      
+   }
 
 }
