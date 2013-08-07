@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/iguana_logo"
+        android:icon="@drawable/head_logo_v1"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
@@ -22,9 +22,13 @@
     </activity>  
         
     <activity android:name=".SplashScreen" android:label="@string/app_name">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.myfirstapp.MainActivity" />
       <intent-filter>
         <action android:name="com.iguana.iguanapro.MAIN" />
         <category android:name="android.intent.category.DEFAULT" />
+
       </intent-filter>
     </activity>
     
