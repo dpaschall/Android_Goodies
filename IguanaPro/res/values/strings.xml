@@ -12,5 +12,6 @@
     <string name="title_activity_settings">IGUANA GUTS</string>
     <string name="IguanaGutz">Iguana Guts and Settings</string>
     <string name="About">Who Is This &quot;IGUANA&quot; Anyway?</string>
+    <string name="title_activity_about">About The Iguana</string>
 
 </resources>

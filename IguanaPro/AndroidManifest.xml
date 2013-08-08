@@ -17,45 +17,54 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.iguana.iguanapro.MainActivity"
-            android:label="@string/username" 
-            android:theme="@style/CustomActionBarTheme">
+            android:label="@string/username"
+            android:theme="@style/CustomActionBarTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.iguana.iguanapro.SplashScreen"
             android:label="@string/app_name"
             android:parentActivityName="com.iguana.iguanapro.MainActivity"
-            android:theme="@style/CustomActionBarTheme">
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.iguana.iguanapro.MainActivity" />
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iguana.iguanapro.MainActivity" />
+
             <intent-filter>
                 <action android:name="com.iguana.iguanapro.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.iguana.iguanapro.Login"
-            android:label="@string/login_screen" 
-            android:theme="@style/CustomActionBarTheme">
+            android:label="@string/login_screen"
+            android:theme="@style/CustomActionBarTheme" >
             <intent-filter>
                 <action android:name="com.iguana.iguanapro.LOGIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.iguana.iguanapro.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
+        <activity
+            android:name="com.iguana.iguanapro.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.iguana.iguanapro.Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iguana.iguanapro.Login" />
+        </activity>
+        
     </application>
 
 </manifest>

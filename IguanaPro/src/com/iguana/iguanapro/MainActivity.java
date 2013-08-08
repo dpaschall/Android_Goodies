@@ -31,5 +31,19 @@ public class MainActivity extends Activity {
 		 startActivity(intent);
 	 }
 	 
+	 /** Called when the user clicks the Settings/Gutz button */
+	 public void Settings(View view) {
+	     // Save string and move to different activity in response to button
+		 //Intent intent = new Intent(this, Settings.class);
+		 //startActivity(intent);
+	 }
+	 
+	 /** Called when the user clicks the About Iguana button */
+	 public void About(View view) {
+	     // Save string and move to different activity in response to button
+		 Intent intent = new Intent(this, About.class);
+		 startActivity(intent);
+	 }
+	 
 	 
 }
