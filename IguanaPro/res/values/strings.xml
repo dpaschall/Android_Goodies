@@ -8,5 +8,7 @@
     <string name="username">User Name: </string>
     <string name="login">LOGIN</string>
     <string name="edit_message">Enter a message</string>
+    <string name="action_search">Search Music</string>
+    <string name="title_activity_settings">IGUANA GUTS</string>
 
 </resources>
