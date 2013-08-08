@@ -9,7 +9,7 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class SplashScreen extends Activity {
+public class UsernameDisplay extends Activity {
 
 	private final int SPLASH_DELAY = 5000;
 
@@ -17,7 +17,7 @@ public class SplashScreen extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.splash_screen);
+		setContentView(R.layout.show_username_screen);
 		
 	    getActionBar().setDisplayHomeAsUpEnabled(true); //Up button: goes back to home
 		
@@ -35,8 +35,8 @@ public class SplashScreen extends Activity {
 
 				}catch(InterruptedException e){e.printStackTrace();}
 				finally{   
-					Intent openLoginScreen = new Intent("com.iguana.iguanapro.LOGIN");
-					startActivity(openLoginScreen);   }				
+					Intent openHomeScreen = new Intent("com.iguana.iguanapro.Home");
+					startActivity(openHomeScreen);   }				
 			}
 		};
 
@@ -44,7 +44,7 @@ public class SplashScreen extends Activity {
 		
 	    // Get the message from the intent
 	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+	    String message = intent.getStringExtra(MainLogin.EXTRA_MESSAGE);
 
 	    // Create the text view
 	    TextView textView = new TextView(this);
