@@ -10,5 +10,7 @@
     <string name="edit_message">Enter a message</string>
     <string name="action_search">Search Music</string>
     <string name="title_activity_settings">IGUANA GUTS</string>
+    <string name="IguanaGutz">Iguana Guts and Settings</string>
+    <string name="About">Who Is This &quot;IGUANA&quot; Anyway?</string>
 
 </resources>
