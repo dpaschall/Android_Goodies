@@ -1,18 +1,22 @@
 package com.iguana.iguanapro;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
 
-public class SplashScreen extends Activity {
+public class Splash extends Activity {
 
-	private final int SPLASH_DELAY = 5000;
+	private final int SPLASH_DELAY = 1500;
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);//Remove title bar
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.splash_screen);
-
+		setContentView(R.layout.activity_splash);
+		
 		Thread timer = new Thread(){
 			public void run()
 			{
@@ -21,7 +25,7 @@ public class SplashScreen extends Activity {
 
 				}catch(InterruptedException e){e.printStackTrace();}
 				finally{   
-					Intent openLoginScreen = new Intent("com.iguana.iguanapro.LOGIN");
+					Intent openLoginScreen = new Intent("com.iguana.iguanapro.MainLogin");
 					startActivity(openLoginScreen);   }				
 			}
 		};
@@ -29,5 +33,6 @@ public class SplashScreen extends Activity {
 		timer.start();
 
 	}
+    
 
 }
