@@ -114,11 +114,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ButtonBar=0x7f070004;
         public static final int ButtonBarButton=0x7f070005;
         /**  the theme applied to the application or activity 
+ the theme applied to the application or activity 
          */
         public static final int CustomActionBarTheme=0x7f070007;
         public static final int FullscreenActionBarStyle=0x7f070006;
         public static final int FullscreenTheme=0x7f070003;
         /**  ActionBar styles 
+ ActionBar styles 
          */
         public static final int MyActionBar=0x7f070002;
     }
