@@ -44,24 +44,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tiled_bg=0x7f020009;
     }
     public static final class id {
-        public static final int Splash=0x7f090001;
-        public static final int action_search=0x7f090006;
-        public static final int action_settings=0x7f090005;
-        public static final int edit_message=0x7f090000;
-        public static final int imageView1=0x7f090004;
-        public static final int progressBar1=0x7f090002;
-        public static final int textView1=0x7f090003;
+        public static final int Splash=0x7f090005;
+        public static final int action_search=0x7f090009;
+        public static final int action_settings=0x7f090008;
+        public static final int button1=0x7f090002;
+        public static final int button2=0x7f090003;
+        public static final int button3=0x7f090001;
+        public static final int edit_message=0x7f090004;
+        public static final int imageView1=0x7f090007;
+        public static final int progressBar1=0x7f090006;
+        public static final int textView1=0x7f090000;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;
-        public static final int activity_login=0x7f030001;
-        public static final int activity_splash=0x7f030002;
-        public static final int home=0x7f030003;
-        public static final int show_username_screen=0x7f030004;
+        public static final int activity_iguana_lounge=0x7f030001;
+        public static final int activity_login=0x7f030002;
+        public static final int activity_splash=0x7f030003;
+        public static final int home=0x7f030004;
+        public static final int show_username_screen=0x7f030005;
     }
     public static final class menu {
         public static final int about=0x7f080000;
-        public static final int main=0x7f080001;
+        public static final int iguana_lounge=0x7f080001;
+        public static final int main=0x7f080002;
     }
     public static final class string {
         public static final int About=0x7f06000a;
@@ -69,6 +74,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int action_search=0x7f060007;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int delete_ig=0x7f060012;
+        public static final int display_friends=0x7f060011;
         public static final int dummy_button=0x7f06000d;
         public static final int dummy_content=0x7f06000e;
         public static final int edit_message=0x7f060006;
@@ -76,7 +83,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int login=0x7f060005;
         public static final int login_screen=0x7f060003;
         public static final int main_screen=0x7f06000f;
+        public static final int show_username=0x7f060013;
         public static final int title_activity_about=0x7f06000b;
+        public static final int title_activity_iguana_lounge=0x7f060010;
         public static final int title_activity_settings=0x7f060008;
         public static final int title_activity_splash=0x7f06000c;
         public static final int username=0x7f060004;

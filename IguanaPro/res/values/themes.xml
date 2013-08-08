@@ -11,4 +11,6 @@
            parent="@style/AppBaseTheme">
         <item name="android:background">@drawable/actionbar_background</item>
     </style>
+    
+
 </resources>

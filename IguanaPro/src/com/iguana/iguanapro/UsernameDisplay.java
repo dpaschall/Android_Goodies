@@ -56,6 +56,9 @@ public class UsernameDisplay extends Activity {
 
 	}
 	
+	
+	
+	
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -65,6 +68,7 @@ public class UsernameDisplay extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    
     
 
 }
