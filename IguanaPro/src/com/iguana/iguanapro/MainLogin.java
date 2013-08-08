@@ -9,7 +9,7 @@ import android.widget.EditText;
 public class MainLogin extends Activity {
 	
 	/**Used for passing data to next activity */
-	public final static String EXTRA_MESSAGE = "com.iguana.iguanapro.MESSAGE";
+	private static String userName = "com.iguana.iguanapro.MESSAGE";
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,7 +27,7 @@ public class MainLogin extends Activity {
 		 Intent intent = new Intent(this, UsernameDisplay.class);
 		 EditText editText = (EditText) findViewById(R.id.edit_message);
 		 String message = editText.getText().toString();
-		 intent.putExtra(EXTRA_MESSAGE, message);
+		 intent.putExtra(userName, message);
 		 startActivity(intent);
 	 }
 	 
